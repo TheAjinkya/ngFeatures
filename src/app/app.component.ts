@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngFeatures';
+
+  onSplideInit(splide:any) {
+    console.log(splide);
+  }
 }
