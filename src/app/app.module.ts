@@ -4,8 +4,8 @@ import { NgxSplideModule } from 'ngx-splide';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +15,8 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     NgxSplideModule,
+    CoreModule,
     SharedModule,
-    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

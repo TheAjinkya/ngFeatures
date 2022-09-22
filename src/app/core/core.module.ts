@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardDirective } from './directives/dashboard.directive';
 
+import { CoreRoutingModule } from './core-routing.module';
+import { DashboardDirective } from './directives/dashboard.directive';
 
 
 @NgModule({
@@ -9,10 +10,8 @@ import { DashboardDirective } from './directives/dashboard.directive';
     DashboardDirective
   ],
   imports: [
-    CommonModule
-  ],
-  exports: [
-    DashboardDirective
+    CommonModule,
+    CoreRoutingModule
   ]
 })
 export class CoreModule { }
