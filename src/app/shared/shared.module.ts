@@ -6,6 +6,8 @@ import { ConfirmationComponent } from './components/confirmation/confirmation.co
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { NgxSplideModule } from 'ngx-splide';
 
 
 @NgModule({
@@ -13,17 +15,20 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ConfirmationComponent,
     LoginComponent,
     LogoutComponent,
-    NavbarComponent
+    NavbarComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    NgxSplideModule,
   ],
   exports: [
     ConfirmationComponent,
     LoginComponent,
     LogoutComponent,
-    NavbarComponent
+    NavbarComponent,
+    CarouselComponent
   ]
 })
 export class SharedModule { }
