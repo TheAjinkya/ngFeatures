@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { NgxSplideModule } from 'ngx-splide';
 import { RegistrationComponent } from './registration/registration.component';
+import { GithubUsersComponent } from './components/github-users/github-users.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { RegistrationComponent } from './registration/registration.component';
     LogoutComponent,
     NavbarComponent,
     CarouselComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    GithubUsersComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { RegistrationComponent } from './registration/registration.component';
     LogoutComponent,
     NavbarComponent,
     CarouselComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    GithubUsersComponent
   ]
 })
 export class SharedModule { }
