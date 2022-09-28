@@ -11,16 +11,18 @@ import { GithubUserService } from 'src/app/core/services/github-user.service';
 export class GithubUsersComponent implements OnInit {
 
   constructor(private githubUsers:GithubUserService) {
-    this.githubUsers.getUsersData().subscribe((response:any)=>{
-      this.usersData = response;
-      console.log("Response", this.usersData);
-    })
+   
    }
 
   usersData :Observable<any> | undefined;
 
   ngOnInit(): void {
     
+    this.usersData = this.githubUsers.getUsersData();
+    // this.githubUsers.getUsersData().subscribe((response:any)=>{
+    //   this.usersData = response;
+    //   console.log("Response", this.usersData);
+    // })
     
 
   }
