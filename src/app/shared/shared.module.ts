@@ -10,6 +10,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { NgxSplideModule } from 'ngx-splide';
 import { RegistrationComponent } from './registration/registration.component';
 import { GithubUsersComponent } from './components/github-users/github-users.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { GithubUsersComponent } from './components/github-users/github-users.com
     CommonModule,
     SharedRoutingModule,
     NgxSplideModule,
+    NgxSpinnerModule
   ],
   exports: [
     ConfirmationComponent,
@@ -34,7 +36,8 @@ import { GithubUsersComponent } from './components/github-users/github-users.com
     NavbarComponent,
     CarouselComponent,
     RegistrationComponent,
-    GithubUsersComponent
+    GithubUsersComponent,
+    NgxSpinnerModule
   ]
 })
 export class SharedModule { }

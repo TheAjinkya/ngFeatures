@@ -1,20 +1,23 @@
-<div>
+<div *ngIf="(usersData | async) else loading">
 <table class="table table-bordered">
     <thead>
       <tr>
         <th>Name</th>
-        <th>Lastname</th>
-        <th>Email</th>
+        <th>Avatar</th>
+        <th>Repo Link</th>
       </tr>
     </thead>
     <tbody>
-      <!-- <tr *ngFor="let user of usersData">
+      <tr *ngFor="let user of (usersData|async)">
         <td>{{user.login}}</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr> -->
+        <td><img height="200" width="200" class="image-responsive" src="{{user.avatar_url}}"></td>
+        <td><a href="{{user.html_url}}">{{user.html_url}}</a></td>
+      </tr>
     </tbody>
   </table>
 </div>
 
-<div *ngFor="let user of (usersData|async)">{{user.login}}</div>
+  <ng-template #loading>Loading...</ng-template>
+
+<!-- <div *ngFor="let user of (usersData|async)">{{user.login}}</div> -->
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
