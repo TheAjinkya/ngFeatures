@@ -11,6 +11,8 @@ import { NgxSplideModule } from 'ngx-splide';
 import { RegistrationComponent } from './registration/registration.component';
 import { GithubUsersComponent } from './components/github-users/github-users.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { MaterialModule } from '../material/material.module';
+import { GmailLoginComponent } from './gmail-login/gmail-login.component';
 
 
 @NgModule({
@@ -21,13 +23,15 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     NavbarComponent,
     CarouselComponent,
     RegistrationComponent,
-    GithubUsersComponent
+    GithubUsersComponent,
+    GmailLoginComponent
   ],
   imports: [
     CommonModule,
     SharedRoutingModule,
     NgxSplideModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    MaterialModule
   ],
   exports: [
     ConfirmationComponent,
@@ -37,7 +41,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     CarouselComponent,
     RegistrationComponent,
     GithubUsersComponent,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    GmailLoginComponent
   ]
 })
 export class SharedModule { }
