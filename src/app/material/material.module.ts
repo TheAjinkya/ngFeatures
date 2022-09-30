@@ -46,8 +46,6 @@ import {OverlayModule} from '@angular/cdk/overlay';
 import {CdkMenuModule} from '@angular/cdk/menu';
 import {DialogModule} from '@angular/cdk/dialog';
 
-
-
 @NgModule({
   exports: [
     A11yModule,
@@ -99,4 +97,4 @@ import {DialogModule} from '@angular/cdk/dialog';
     DialogModule,
   ]
 })
-export class MaterialModule { }
+export class MaterialModule {}
