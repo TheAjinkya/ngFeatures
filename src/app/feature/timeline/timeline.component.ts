@@ -7,17 +7,16 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./timeline.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent {
 
-  ngOnInit(): void {
-  }
   firstFormGroup = this._formBuilder.group({
     firstCtrl: ['', Validators.required],
   });
   secondFormGroup = this._formBuilder.group({
     secondCtrl: ['', Validators.required],
   });
-  isLinear = false;
+  isEditable = false;
+
 
   constructor(private _formBuilder: FormBuilder) {}
 }
