@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { FeatureModule } from './feature/feature.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -20,11 +22,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     CoreModule,
     SharedModule,
+    FeatureModule,
     MaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule
   ],
+  
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent],

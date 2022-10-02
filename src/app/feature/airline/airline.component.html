@@ -1,0 +1,10 @@
+<p>airline works!</p>
+
+The table
+<div *ngFor="let item of (passenger|async)">
+    {{item.name}}
+</div>
+<pagination-controls
+  class="pagi"
+  (pageChange)="page = $event"
+></pagination-controls>
