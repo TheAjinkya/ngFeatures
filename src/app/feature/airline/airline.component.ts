@@ -14,7 +14,7 @@ export class AirlineComponent implements OnInit {
 
   constructor(private airlineService : AirlineService, private spinner:NgxSpinnerService) { }
   
-  passenger:Observable<any> | undefined; 
+  passenger:any; 
   page: number = 1;
   isDataAvailable:boolean = false;
   
@@ -22,8 +22,8 @@ export class AirlineComponent implements OnInit {
 
     this.spinner.show();
     this.airlineService.getAllPassengerData().subscribe((response:any)=>{
-      console.log(response.data);
       this.passenger = response.data;
+      console.log(this.passenger);
       this.page =  0
       this.isDataAvailable = true;
       this.spinner.hide();

@@ -24,7 +24,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     FormsModule,
     ReactiveFormsModule,
     NgxPaginationModule,
-    NgxSpinnerModule
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
   ],
   exports: [
     MaterialModule,

@@ -28,7 +28,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgxSpinnerModule 
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
   ],
   exports:[NgxSpinnerModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
