@@ -8,6 +8,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AirlineComponent } from './airline/airline.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 @NgModule({
@@ -22,12 +23,14 @@ import { NgxPaginationModule } from 'ngx-pagination';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    NgxSpinnerModule
   ],
   exports: [
     MaterialModule,
     AirlineComponent,
-    NgxPaginationModule
+    NgxPaginationModule,
+    NgxSpinnerModule
   ]
 })
 export class FeatureModule { }
