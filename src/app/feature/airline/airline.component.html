@@ -1,6 +1,6 @@
 <p>airline works!</p>
 
-<ng-container *ngIf="isDataAvailable">
+<ng-container *ngIf="passenger.length>0">
   The table
   <div *ngFor="let item of (passenger)">
     {{item.name}}

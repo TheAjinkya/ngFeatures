@@ -8,18 +8,21 @@ import { AirlineService } from 'src/app/core/services/airline.service';
   selector: 'app-airline',
   templateUrl: './airline.component.html',
   styleUrls: ['./airline.component.css'],
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AirlineComponent implements OnInit {
 
   constructor(private airlineService : AirlineService, private spinner:NgxSpinnerService) { }
   
-  passenger:any; 
+  passenger: any[] = []; 
   page: number = 1;
   isDataAvailable:boolean = false;
+  itemsPerPage = 6;
+  totalItems : any; 
   
   ngOnInit(): void {
 
+    // this.passenger = this.airlineService.getAllPassengerData();
     this.spinner.show();
     this.airlineService.getAllPassengerData().subscribe((response:any)=>{
       this.passenger = response.data;
