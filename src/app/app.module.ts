@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { FeatureModule } from './feature/feature.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgxPaginationModule,
     NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
   ],
   exports:[NgxSpinnerModule],

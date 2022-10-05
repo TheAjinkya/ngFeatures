@@ -10,7 +10,7 @@ export class AirlineService {
 
   constructor(private http:HttpClient) { }
 
-  getAllPassengerData():Observable<any> {
-    return this.http.get("https://api.instantwebtools.net/v1/passenger")
+  getAllPassengerData(page:number, itemsPerPage:number):Observable<any> {
+    return this.http.get(`https://api.instantwebtools.net/v1/passenger?page=${page}&size=${itemsPerPage}`)
 }
 }

@@ -1,16 +1,23 @@
 <p>airline works!</p>
 
-<ng-container *ngIf="passenger.length>0">
+<ng-container>
   The table
-  <div *ngFor="let item of (passenger)">
-    {{item.name}}
+  <div *ngFor="let item of (passenger| paginate
+  : {
+      itemsPerPage: itemsPerPage,
+      currentPage: page,
+      totalItems: totalItems
+    })">
+    {{item.name }}
   </div>
   <pagination-controls
   class="pagi"
-  (pageChange)="page = $event"
+  (pageChange)="gty((page = $event))"
   ></pagination-controls>
 </ng-container>
 
+<hr/>
+<div *ngFor="let num of myContacts">{{num}}</div>
 <!-- <ngx-spinner type="timer"></ngx-spinner> -->
 <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "small" color = "#fff" type = "timer" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
 
