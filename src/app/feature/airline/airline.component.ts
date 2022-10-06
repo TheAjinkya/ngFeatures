@@ -20,7 +20,6 @@ export class AirlineComponent implements OnInit {
   itemsPerPage = 6;
   totalItems : any; 
 
-  myContacts:any[]=[10,23,43,54654,456,456];
   
   ngOnInit(): void {
 
@@ -28,7 +27,9 @@ export class AirlineComponent implements OnInit {
     this.spinner.show();
     this.airlineService.getAllPassengerData(1, this.itemsPerPage).subscribe((response:any)=>{
       console.log(response.data);
-      this.passenger= response.data.forEach((iterator:any)=>iterator.airline);
+      this.passenger= response.data.map((element:any) => {
+        return(element.airline[0]);
+      });
       this.totalItems = response.totalPassengers;
       console.log(this.passenger);
       this.page =  0
