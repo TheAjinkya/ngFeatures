@@ -13,6 +13,7 @@ import { GithubUsersComponent } from './components/github-users/github-users.com
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { MaterialModule } from '../material/material.module';
 import { GmailLoginComponent } from './gmail-login/gmail-login.component';
+import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { GmailLoginComponent } from './gmail-login/gmail-login.component';
     CarouselComponent,
     RegistrationComponent,
     GithubUsersComponent,
-    GmailLoginComponent
+    GmailLoginComponent,
+    ConfirmationDialogComponent
   ],
   imports: [
     CommonModule,
@@ -42,7 +44,8 @@ import { GmailLoginComponent } from './gmail-login/gmail-login.component';
     RegistrationComponent,
     GithubUsersComponent,
     NgxSpinnerModule,
-    GmailLoginComponent
+    GmailLoginComponent,
+    ConfirmationDialogComponent
   ]
 })
 export class SharedModule { }
