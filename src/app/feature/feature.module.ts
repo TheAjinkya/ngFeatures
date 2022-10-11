@@ -9,13 +9,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AirlineComponent } from './airline/airline.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { MatComponent } from './mat/mat.component';
 
 
 @NgModule({
   declarations: [
     FeatureComponent,
     TimelineComponent,
-    AirlineComponent
+    AirlineComponent,
+    MatComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +32,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     MaterialModule,
     AirlineComponent,
     NgxPaginationModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    MatComponent
   ]
 })
 export class FeatureModule { }

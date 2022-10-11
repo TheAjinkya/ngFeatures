@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AirlineComponent } from '../feature/airline/airline.component';
+import { MatComponent } from '../feature/mat/mat.component';
 import { TimelineComponent } from '../feature/timeline/timeline.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { GithubUsersComponent } from './components/github-users/github-users.component';
@@ -14,6 +15,7 @@ const routes: Routes = [{ path: 'login', component: LoginComponent },
 {path:'users', component:GithubUsersComponent},
 {path:'timeline', component:TimelineComponent},
 {path:'airline', component:AirlineComponent},
+{path:'mat', component:MatComponent}
 ];
 
 @NgModule({
