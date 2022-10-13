@@ -26,7 +26,7 @@ import { MatComponent } from './mat/mat.component';
     FormsModule,
     ReactiveFormsModule,
     NgxPaginationModule,
-    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' }),
   ],
   exports: [
     MaterialModule,
