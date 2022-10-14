@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
+import { Observable, Subscription } from 'rxjs';
 import { GithubUserService } from 'src/app/core/services/github-user.service';
 import { NgxSpinnerService } from "ngx-spinner";
 
@@ -10,7 +10,7 @@ import { NgxSpinnerService } from "ngx-spinner";
   styleUrls: ['./github-users.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GithubUsersComponent implements OnInit {
+export class GithubUsersComponent implements OnInit, OnDestroy {
 
   constructor(private githubUsers:GithubUserService, private spinner: NgxSpinnerService) {
    
@@ -18,10 +18,18 @@ export class GithubUsersComponent implements OnInit {
 
   usersData :Observable<any> | undefined;
 
+  subscription = new Subscription() 
+
   ngOnInit(): void {
     
-    this.usersData = this.githubUsers.getUsersData();
+    this.subscription = this.githubUsers.getUsersData().subscribe(response=>{
+      this.usersData = response
+    })
 
   }
 
+  ngOnDestroy(){
+    this.subscription.unsubscribe()
+  }
+  
 }

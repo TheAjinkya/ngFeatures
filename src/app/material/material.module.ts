@@ -46,6 +46,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { CdkMenuModule } from '@angular/cdk/menu';
 import { DialogModule } from '@angular/cdk/dialog';
 import { FormComponent } from './form/form.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   imports: [
@@ -146,9 +147,11 @@ import { FormComponent } from './form/form.component';
     ScrollingModule,
     DialogModule,
     FormComponent,
+    TableComponent,
   ],
   declarations: [
-    FormComponent
+    FormComponent,
+    TableComponent
   ]
 })
 export class MaterialModule { }
