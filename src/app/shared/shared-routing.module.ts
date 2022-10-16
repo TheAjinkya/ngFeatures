@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AirlineComponent } from '../feature/airline/airline.component';
 import { MatComponent } from '../feature/mat/mat.component';
 import { TimelineComponent } from '../feature/timeline/timeline.component';
+import { DrangAndDropComponent } from '../material/drang-and-drop/drang-and-drop.component';
 import { FormComponent } from '../material/form/form.component';
 import { TableComponent } from '../material/table/table.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
     children: [
       { path: 'form', component: FormComponent },
       { path: 'mattable', component: TableComponent },
+      { path: 'draganddrop', component: DrangAndDropComponent },
     ],
   },
 ];

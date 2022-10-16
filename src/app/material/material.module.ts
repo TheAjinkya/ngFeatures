@@ -47,6 +47,7 @@ import { CdkMenuModule } from '@angular/cdk/menu';
 import { DialogModule } from '@angular/cdk/dialog';
 import { FormComponent } from './form/form.component';
 import { TableComponent } from './table/table.component';
+import { DrangAndDropComponent } from './drang-and-drop/drang-and-drop.component';
 
 @NgModule({
   imports: [
@@ -148,10 +149,12 @@ import { TableComponent } from './table/table.component';
     DialogModule,
     FormComponent,
     TableComponent,
+    DrangAndDropComponent,
   ],
   declarations: [
     FormComponent,
-    TableComponent
+    TableComponent,
+    DrangAndDropComponent
   ]
 })
 export class MaterialModule { }
