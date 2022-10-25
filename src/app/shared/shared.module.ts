@@ -14,6 +14,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { MaterialModule } from '../material/material.module';
 import { GmailLoginComponent } from './gmail-login/gmail-login.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-
     RegistrationComponent,
     GithubUsersComponent,
     GmailLoginComponent,
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,8 @@ import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-
     GithubUsersComponent,
     NgxSpinnerModule,
     GmailLoginComponent,
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
