@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AirlineComponent } from '../feature/airline/airline.component';
 import { MatComponent } from '../feature/mat/mat.component';
 import { TimelineComponent } from '../feature/timeline/timeline.component';
+import { AccordianComponent } from '../material/accordian/accordian.component';
 import { DrangAndDropComponent } from '../material/drang-and-drop/drang-and-drop.component';
 import { FormComponent } from '../material/form/form.component';
 import { TableComponent } from '../material/table/table.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
       { path: 'form', component: FormComponent },
       { path: 'mattable', component: TableComponent },
       { path: 'draganddrop', component: DrangAndDropComponent },
+      { path: 'accordian', component: AccordianComponent },
     ],
   },
 ];

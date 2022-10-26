@@ -48,6 +48,7 @@ import { DialogModule } from '@angular/cdk/dialog';
 import { FormComponent } from './form/form.component';
 import { TableComponent } from './table/table.component';
 import { DrangAndDropComponent } from './drang-and-drop/drang-and-drop.component';
+import { AccordianComponent } from './accordian/accordian.component';
 
 @NgModule({
   imports: [
@@ -150,11 +151,13 @@ import { DrangAndDropComponent } from './drang-and-drop/drang-and-drop.component
     FormComponent,
     TableComponent,
     DrangAndDropComponent,
+    AccordianComponent,
   ],
   declarations: [
     FormComponent,
     TableComponent,
-    DrangAndDropComponent
+    DrangAndDropComponent,
+    AccordianComponent
   ]
 })
 export class MaterialModule { }
