@@ -9,8 +9,7 @@ import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FeatureModule } from './feature/feature.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { NgxPaginationModule } from 'ngx-pagination';
@@ -28,6 +27,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     MaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule,
     NgxPaginationModule,
     NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })

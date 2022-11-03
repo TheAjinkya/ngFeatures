@@ -15,6 +15,8 @@ import { MaterialModule } from '../material/material.module';
 import { GmailLoginComponent } from './gmail-login/gmail-login.component';
 import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StepperComponent } from '../material/stepper/stepper.component';
 
 
 @NgModule({
@@ -28,14 +30,17 @@ import { FooterComponent } from './components/footer/footer.component';
     GithubUsersComponent,
     GmailLoginComponent,
     ConfirmationDialogComponent,
-    FooterComponent
+    FooterComponent,
+    StepperComponent
   ],
   imports: [
     CommonModule,
     SharedRoutingModule,
     NgxSplideModule,
     NgxSpinnerModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     ConfirmationComponent,
@@ -48,7 +53,9 @@ import { FooterComponent } from './components/footer/footer.component';
     NgxSpinnerModule,
     GmailLoginComponent,
     ConfirmationDialogComponent,
-    FooterComponent
+    FooterComponent,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

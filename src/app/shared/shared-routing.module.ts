@@ -6,6 +6,7 @@ import { TimelineComponent } from '../feature/timeline/timeline.component';
 import { AccordianComponent } from '../material/accordian/accordian.component';
 import { DrangAndDropComponent } from '../material/drang-and-drop/drang-and-drop.component';
 import { FormComponent } from '../material/form/form.component';
+import { StepperComponent } from '../material/stepper/stepper.component';
 import { TableComponent } from '../material/table/table.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { GithubUsersComponent } from './components/github-users/github-users.component';
@@ -28,6 +29,7 @@ const routes: Routes = [
       { path: 'mattable', component: TableComponent },
       { path: 'draganddrop', component: DrangAndDropComponent },
       { path: 'accordian', component: AccordianComponent },
+      { path: 'stepper', component: StepperComponent },
     ],
   },
 ];

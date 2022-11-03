@@ -49,6 +49,8 @@ import { FormComponent } from './form/form.component';
 import { TableComponent } from './table/table.component';
 import { DrangAndDropComponent } from './drang-and-drop/drang-and-drop.component';
 import { AccordianComponent } from './accordian/accordian.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -152,6 +154,8 @@ import { AccordianComponent } from './accordian/accordian.component';
     TableComponent,
     DrangAndDropComponent,
     AccordianComponent,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   declarations: [
     FormComponent,
