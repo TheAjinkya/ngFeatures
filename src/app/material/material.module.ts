@@ -51,6 +51,7 @@ import { DrangAndDropComponent } from './drang-and-drop/drang-and-drop.component
 import { AccordianComponent } from './accordian/accordian.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardboardComponent } from './cardboard/cardboard.component';
 
 @NgModule({
   imports: [
@@ -156,12 +157,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AccordianComponent,
     FormsModule,
     ReactiveFormsModule,
+    CardboardComponent,
   ],
   declarations: [
     FormComponent,
     TableComponent,
     DrangAndDropComponent,
-    AccordianComponent
+    AccordianComponent,
+    CardboardComponent
   ]
 })
 export class MaterialModule { }
