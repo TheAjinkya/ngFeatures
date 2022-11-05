@@ -52,6 +52,7 @@ import { AccordianComponent } from './accordian/accordian.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardboardComponent } from './cardboard/cardboard.component';
+import { MatFormComponent } from './mat-form/mat-form.component';
 
 @NgModule({
   imports: [
@@ -164,7 +165,8 @@ import { CardboardComponent } from './cardboard/cardboard.component';
     TableComponent,
     DrangAndDropComponent,
     AccordianComponent,
-    CardboardComponent
+    CardboardComponent,
+    MatFormComponent
   ]
 })
 export class MaterialModule { }
